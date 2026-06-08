@@ -1,0 +1,29 @@
+{
+  "name": "@taskmaster/auth-service",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "ts-node --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "npx rimraf node_modules dist"
+  },
+  "dependencies": {
+    "@taskmaster/database": "*",
+    "@taskmaster/shared": "*",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.3.2",
+    "@fastify/cors": "^11.0.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.19.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
